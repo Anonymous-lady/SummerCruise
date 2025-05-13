@@ -1,0 +1,31 @@
+public class BigONotation{
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int n = kb.nextInt();
+        addUp(n);
+    }
+    // o(n) linear time -> looping thorugh elements in an array, searching through a linkedlist
+    public static int addUp(int n){
+        int sum = 0;
+        for(int i = 0; i <= n; i++){
+            sum += i;
+        }
+        return sum;
+    }
+
+    //O(1) constant time (input size doesnt matter) -> random access of elements in an array,
+     inserting at the beginning of a linkedlist
+    public static int addUp(int n){
+        int sum = n * (n + 1) / 2;
+        
+    }
+
+    //O(log n) logarithmic time -> binary search
+
+    //O(n log n) quasilinear time ->quicksort, mergesort, heapsort
+
+    //O(n ^ 2) quadratic time -> insertion sort, selection sort, bubblesort
+
+    //O(n!) factorial time -> Traveling Saleman Problem
+
+}
